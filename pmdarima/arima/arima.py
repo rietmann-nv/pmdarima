@@ -226,7 +226,7 @@ class ARIMA(BaseEstimator):
                  trend=None, with_intercept=True):
 
         # XXX: This isn't actually required--sklearn doesn't need a super call
-        super(ARIMA, self).__init__()
+        super().__init__()
 
         self.order = order
         self.seasonal_order = seasonal_order
